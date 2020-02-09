@@ -22,10 +22,3 @@ db = SQLAlchemy()
 app = Application(__name__)
 manager = Manager(app)
 register_blueprint(app)
-
-
-'''
-函数模板
-'''
-app.add_template_global(UrlManager.buildStaticUrl, 'buildStaticUrl')
-app.add_template_global(UrlManager.buildUrl, 'buildUrl')
