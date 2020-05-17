@@ -1,0 +1,1 @@
+##### flask-sqlacodegen "mysql+pymysql://root:root@127.0.0.1:8889/food_db" --tables user --outfile "common/models/user.py"  --flask 

@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from application import app, manager
 from flask_script import Server
+from www import *
 
 # web server
 manager.add_command('runserver', Server(
-    host=app.config['SERVER_HOST'], port=app.config['SERVER_PORT'], use_debugger=True, use_reloader=True))
+    host=app.config['SERVER_HOST'], port=app.config['SERVER_PORT'], use_debugger=app.config['DEBUG'], use_reloader=True))
 
 
 def main():

@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
-from common.libs.urlManager import UrlManager
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager
 import os
-from www import register_blueprint
 
 
 class Application(Flask):
+
     def __init__(self, import_name):
-        super(Application, self).__init__(
+        super().__init__(
             import_name, static_folder='web/static', template_folder='web/templates')
         self.config.from_pyfile('config/base_setting.py')
         if 'ops_config' in os.environ:
@@ -21,4 +20,4 @@ class Application(Flask):
 db = SQLAlchemy()
 app = Application(__name__)
 manager = Manager(app)
-register_blueprint(app)
+
