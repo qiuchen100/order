@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Blueprint, render_template
+from flask import Blueprint ,render_template
 
 route_stat = Blueprint('stat_page', __name__)
 

@@ -3,7 +3,7 @@ from application import app
 
 
 '''
-    蓝图
+蓝图
 '''
 from web.controllers.index import route_index
 from web.controllers.user import route_user
@@ -22,8 +22,15 @@ app.register_blueprint(route_stat, url_prefix='/stat')
 
 
 '''
-    模板函数
+模板函数
 '''
-from common.libs.urlManager import UrlManager
+from common.libs.UrlManager import UrlManager
 app.add_template_global(UrlManager.buildUrl, 'buildUrl')
 app.add_template_global(UrlManager.buildStaticUrl, 'buildStaticUrl')
+
+
+'''
+拦截器
+'''
+from web.interceptors.auth import before_request
+
