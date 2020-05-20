@@ -6,9 +6,12 @@ var user_edit_ops = {
     eventBind: function () {
         $('.user_edit_wrap .save').click(
           function () {
-            var mobile = $('.user_edit_wrap input[name="mobile"]').val();
-            var nickname = $('.user_edit_wrap input[name="nickname"]').val();
-            var email = $('.user_edit_wrap input[name="email"]').val();
+            var mobile_target = $('.user_edit_wrap input[name="mobile"]');
+            var mobile = mobile_target.val();
+            var nickname_target = $('.user_edit_wrap input[name="nickname"]');
+            var nickname = nickname_target.val();
+            var email_target = $('.user_edit_wrap input[name="email"]');
+            var email = email_target.val();
 
             var btn_target = $(this);
             if (btn_target.hasClass('disabled')) {
@@ -16,16 +19,16 @@ var user_edit_ops = {
             }
 
             if (mobile == undefined || mobile.length < 1) {
-                common_ops.alert('请输入正确的手机号！');
+                common_ops.tip('请输入正确的手机号！', mobile_target);
                 return;
             }
 
             if (nickname == undefined || nickname.length < 1) {
-                common_ops.alert('请输入正确的姓名！');
+                common_ops.tip('请输入正确的姓名！', nickname_target);
                 return;
             }
             if (email == undefined || email.length < 1) {
-                common_ops.alert('请输入正确的邮箱！');
+                common_ops.tip('请输入正确的邮箱！', nickname_target);
                 return;
             }
             btn_target.addClass('disabled');
@@ -39,7 +42,7 @@ var user_edit_ops = {
                     var callback = null;
                     if (res.code == 200) {
                         callback = function () {
-                            window.location.href = common_ops.buildUrl('/user/edit');
+                            window.location.href = window.location.href;
                         };
                     }
                     common_ops.alert(res.msg, callback);

@@ -30,18 +30,17 @@ def check_login():
     '''
     cookies = request.cookies
     auth_cookie = cookies.get(app.config['AUTH_COOKIE_NAME'])
-    user_info = None
     if auth_cookie is None:
-        return user_info
+        return None
     auth_info = auth_cookie.split('#')
     if len(auth_info) != 2:
-        return user_info
+        return None
     try:
         user_info = User.query.filter_by(uid=auth_info[1]).first()
     except Exception:
-        return user_info
-    if user_info is None:
-        return user_info
+        return None
+    if not user_info:
+        return None
     if UserService.geneAuthCode(user_info) != auth_info[0]:
-        return user_info
+        return None
     return user_info

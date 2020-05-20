@@ -41,7 +41,6 @@ def login():
     response = make_response(jsonify(resp))
     response.set_cookie(app.config['AUTH_COOKIE_NAME'], '{}#{}'. \
                         format(UserService.geneAuthCode(user_info), user_info.uid))
-
     return response
 
 
@@ -49,7 +48,7 @@ def login():
 def edit():
     resp = {'code': 200, 'msg': '账户信息修改成功！', 'data': {}}
     if request.method == 'GET':
-        return render_template('user/edit.html')
+        return render_template('user/edit.html', current='edit')
     req = request.values
     mobile = req.get('mobile')
     nickname = req.get('nickname')
@@ -66,15 +65,14 @@ def edit():
         resp['code'] = -1
         resp['msg'] = '请输入正确的邮箱！'
         return jsonify(resp)
-    user_info = User.query.filter_by(login_name=g.current_user.login_name).first()
-    if not user_info:
-        resp['code'] = -1
-        resp['msg'] = '该用户不存在，请重新登录！'
-        return jsonify(resp)
+
+    user_info = g.current_user
     user_info.mobile = mobile
     user_info.nickname = nickname
     user_info.email = email
+    db.session.add(user_info)
     db.session.commit()
+
     return jsonify(resp)
 
 
@@ -83,7 +81,7 @@ def edit():
 def reset_pwd():
     resp = {'code': 200, 'msg': '密码修改成功！', 'data': {}}
     if request.method == 'GET':
-        return render_template('user/reset_pwd.html')
+        return render_template('user/reset_pwd.html', current='reset-pwd')
     req = request.values
     old_password = req.get('old_password')
     new_password = req.get('new_password')
@@ -106,14 +104,15 @@ def reset_pwd():
         resp['msg'] = '两次输入的密码不一致，请重新输入！'
         return jsonify(resp)
 
-    user_info = User.query.filter_by(login_name=g.current_user.login_name).first()
-    if not user_info:
-        resp['code'] = -1
-        resp['msg'] = '该用户不存在，请重新登录！'
-        return jsonify(resp)
-    user_info.login_pwd = UserService.genePwd(new_password, g.current_user.login_salt)
+    user_info = g.current_user
+    user_info.login_pwd = UserService.genePwd(new_password, user_info.login_salt)
+    db.session.add(user_info)
     db.session.commit()
-    return jsonify(resp)
+
+    response = make_response(jsonify(resp))
+    response.set_cookie(app.config['AUTH_COOKIE_NAME'], '{}#{}'. \
+                        format(UserService.geneAuthCode(user_info), user_info.uid))
+    return response
 
 
 @route_user.route('/logout')
