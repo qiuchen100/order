@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <a class="btn btn-w-m btn-outline btn-primary pull-right"
-                       href="{{ buildUrl('/account/set') }}">
+                       href="{{ buildUrl('/account/add') }}">
                         <i class="fa fa-plus"></i>账号
                     </a>
                 </div>
@@ -56,16 +56,17 @@
             </tr>
             </thead>
             <tbody>
+            {% for user in user_list %}
             <tr>
-                <td>1</td>
-                <td>编程浪子2</td>
-                <td>11012031511</td>
-                <td>apanly@163.com</td>
+                <td>{{ user.uid }}</td>
+                <td>{{ user.nickname }}</td>
+                <td>{{ user.mobile }}</td>
+                <td>{{ user.email }}</td>
                 <td>
-                    <a href="{{ buildUrl('/account/info') }}">
+                    <a href="{{ buildUrl('/account/info') }}?uid={{ user.uid }}">
                         <i class="fa fa-eye fa-lg"></i>
                     </a>
-                    <a class="m-l" href="{{ buildUrl('/account/set') }}">
+                    <a class="m-l" href="{{ buildUrl('/account/set') }}?uid={{ user.uid }}">
                         <i class="fa fa-edit fa-lg"></i>
                     </a>
 
@@ -74,18 +75,12 @@
                     </a>
                 </td>
             </tr>
+            {% endfor %}
             </tbody>
         </table>
 
         <!--分页代码已被封装到统一模板文件中-->
-        <div class="row">
-            <div class="col-lg-12">
-                <span class="pagination_count" style="line-height: 40px;">共1条记录 | 每页50条</span>
-                <ul class="pagination pagination-lg pull-right" style="margin: 0 0 ;">
-                    <li class="active"><a href="javascript:void(0);">1</a></li>
-                </ul>
-            </div>
-        </div>
+        {% include 'common/pagination.html' %}
     </div>
 </div>
 {% endblock %}

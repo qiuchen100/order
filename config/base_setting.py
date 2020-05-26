@@ -12,3 +12,7 @@ IGNORE_STATIC_URLS = [
     '^/static',
     '^/favicon.ico'
 ]
+
+
+PAGE_SIZE = 50
+PAGE_DISPLAY = 10
