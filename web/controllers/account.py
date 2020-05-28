@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from flask import Blueprint, render_template, redirect, request
+from flask import Blueprint, render_template, redirect, request, jsonify
 from common.models.user import User
-from common.libs.Helper import iPagination
+from common.libs.Helper import iPagination, getCurrentDate
 from common.libs.UrlManager import UrlManager
-from application import app
+from common.libs.UserService import UserService
+from application import app, db
 
 route_account = Blueprint('account_page', __name__)
 
@@ -47,11 +48,65 @@ def set():
         user_info = User.query.filter_by(uid=uid).first() if uid else None
         return render_template('account/set.html', user_info=user_info)
     req = request.values
+    uid = req.get('uid', 0)
     nickname = req.get('nickname')
     mobile = req.get('mobile')
     email = req.get('email')
     login_name = req.get('login_name')
     login_pwd = req.get('login_pwd')
+
+    if nickname is None or len( nickname ) < 1:
+        resp['code'] = -1
+        resp['msg'] = "请输入符合规范的姓名~~"
+        return jsonify( resp )
+
+    if mobile is None or len( mobile ) < 1:
+        resp['code'] = -1
+        resp['msg'] = "请输入符合规范的手机号码~~"
+        return jsonify( resp )
+
+    if email is None or len( email ) < 1:
+        resp['code'] = -1
+        resp['msg'] = "请输入符合规范的邮箱~~"
+        return jsonify( resp )
+
+    if login_name is None or len( login_name ) < 1:
+        resp['code'] = -1
+        resp['msg'] = "请输入符合规范的登录用户名~~"
+        return jsonify( resp )
+
+    if login_pwd is None or len( email ) < 6:
+        resp['code'] = -1
+        resp['msg'] = "请输入符合规范的登录密码~~"
+        return jsonify( resp )
+
+    if uid == 0 and login_pwd != '******':
+        resp['code'] = -1
+        resp['msg'] = "请设置密码~~"
+        return jsonify( resp )
+
+    user_info = User.query.filter_by(uid!=uid, login_name=login_name).first() if uid else None
+    if user_info:
+        resp['code'] = -1
+        resp['msg'] = "该登录名已存在，请换一个试试~~"
+        return jsonify(resp)
+
+    model_user = User.query.filter_by(uid=uid).first() or User()
+    model_user.nickname = nickname
+    model_user.mobile = mobile
+    model_user.email = email
+    model_user.login_name = login_name
+    model_user.nickname = nickname
+    model_user.updated_time = getCurrentDate()
+    if not uid:
+        model_user.created_time = getCurrentDate()
+    if login_pwd != '******':
+        model_user.login_salt = UserService.geneSalt()
+        model_user.login_pwd = UserService.genePwd(login_pwd, model_user.login_salt)
+
+    db.session.add(model_user)
+    db.session.commit()
+    return jsonify(resp)
 
 
 @route_account.route('/ops', methods=['POST'])

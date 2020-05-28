@@ -33,15 +33,20 @@ var account_set_ops = {
                 return;
             }
             if (email == undefined || email.length < 1) {
-                common_ops.tip('请输入正确的邮箱！', nickname_target);
+                common_ops.tip('请输入正确的邮箱！', email_target);
                 return;
             }
             if (login_name == undefined || login_pwd.length < 1) {
-                common_ops.tip('请输入正确的用户名！', nickname_target);
+                common_ops.tip('请输入正确的用户名！', login_name_target);
                 return;
             }
-            if (login_pwd == undefined || login_pwd.length < 1) {
-                common_ops.tip('请输入正确的密码！', nickname_target);
+            if (login_pwd == undefined || login_pwd.length < 6) {
+                common_ops.tip('请输入正确的密码！', login_pwd_target);
+                return;
+            }
+
+            if (uid == '' && login_pwd == '******') {
+                common_ops.tip('请设置密码！', login_pwd_target);
                 return;
             }
 
@@ -50,7 +55,7 @@ var account_set_ops = {
             $.ajax({
                 url: common_ops.buildUrl('/account/set'),
                 type: 'POST',
-                data: {'mobile': mobile, 'nickname': nickname, 'email': email, 'login_name': login_name, 'login_pwd': login_pwd},
+                data: {'mobile': mobile, 'nickname': nickname, 'email': email, 'login_name': login_name, 'login_pwd': login_pwd, 'uid': uid},
                 dataType: 'json',
                 success: function (res) {
                     btn_target.removeClass('disabled');
