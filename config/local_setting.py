@@ -1,5 +1,5 @@
 DEBUG = True
-SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://root:123456@127.0.0.1:3306/food_db'
+SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://root:root@127.0.0.1:8889/food_db'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = True
 SQLALCHEMY_ENCODING = 'utf-8'

@@ -42,11 +42,13 @@ def info():
 
 @route_account.route('/set', methods=['GET', 'POST'])
 def set():
+    default_pwd = '******'
     resp = {'code': 200, 'msg': '添加新账户成功！', 'data': {}}
     if request.method == 'GET':
         uid = request.args.get('uid')
         user_info = User.query.filter_by(uid=uid).first() if uid else None
-        return render_template('account/set.html', user_info=user_info)
+        default_pwd = default_pwd if uid else ''
+        return render_template('account/set.html', user_info=user_info, default_pwd=default_pwd)
     req = request.values
     uid = req.get('uid', 0)
     nickname = req.get('nickname')
@@ -75,17 +77,12 @@ def set():
         resp['msg'] = "请输入符合规范的登录用户名~~"
         return jsonify( resp )
 
-    if login_pwd is None or len( email ) < 6:
+    if login_pwd is None or len( login_pwd ) < 6:
         resp['code'] = -1
         resp['msg'] = "请输入符合规范的登录密码~~"
         return jsonify( resp )
 
-    if uid == 0 and login_pwd != '******':
-        resp['code'] = -1
-        resp['msg'] = "请设置密码~~"
-        return jsonify( resp )
-
-    user_info = User.query.filter_by(uid!=uid, login_name=login_name).first() if uid else None
+    user_info = User.query.filter(User.uid!=uid, User.login_name==login_name).first() if uid else None
     if user_info:
         resp['code'] = -1
         resp['msg'] = "该登录名已存在，请换一个试试~~"

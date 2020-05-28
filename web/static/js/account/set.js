@@ -36,7 +36,7 @@ var account_set_ops = {
                 common_ops.tip('请输入正确的邮箱！', email_target);
                 return;
             }
-            if (login_name == undefined || login_pwd.length < 1) {
+            if (login_name == undefined || login_name.length < 1) {
                 common_ops.tip('请输入正确的用户名！', login_name_target);
                 return;
             }
@@ -44,12 +44,6 @@ var account_set_ops = {
                 common_ops.tip('请输入正确的密码！', login_pwd_target);
                 return;
             }
-
-            if (uid == '' && login_pwd == '******') {
-                common_ops.tip('请设置密码！', login_pwd_target);
-                return;
-            }
-
 
             btn_target.addClass('disabled');
             $.ajax({
@@ -62,7 +56,7 @@ var account_set_ops = {
                     var callback = null;
                     if (res.code == 200) {
                         callback = function () {
-                            window.location.href = window.location.href;
+                            window.location.href = common_ops.buildUrl('/account/index');
                         };
                     }
                     common_ops.alert(res.msg, callback);
