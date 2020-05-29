@@ -43,10 +43,17 @@ def iPagination( params ):
     if page >= total_pages:
         ret['is_next'] = 0
 
-    semi = int( math.ceil( display / 2 ) )
-
-    ret['from'] = page - semi if page - semi > 0 else 1
-    ret['end'] = page + semi if page + semi <= total_pages else total_pages
+    semi = int( math.ceil( (display - 1) / 2 ) )
+    left_semi = semi if page - semi > 0 else page - 1
+    right_semi = display - 1 - left_semi
+    if page + display - 1 - left_semi > total_pages:
+        right_semi = total_pages - page
+        left_semi = display - 1 - right_semi
+        left_semi = left_semi if page - left_semi > 0 else page - 1
+    ret['from'] = page - left_semi
+    ret['end'] = page + right_semi
+    # ret['from'] = page - semi if page - semi > 0 else 1
+    # ret['end'] = page + semi if page + semi <= total_pages else total_pages
     ret['current'] = page
     ret['total_pages'] = total_pages
     ret['page_size'] = page_size
@@ -55,10 +62,8 @@ def iPagination( params ):
     return ret
 
 
-
 def getCurrentDate( format = "%Y-%m-%d %H:%M:%S"):
     '''
     获取当前时间
     '''
-    #return datetime.datetime.now().strftime( format )
-    return datetime.datetime.now()
+    return datetime.datetime.now().strftime(format)

@@ -14,6 +14,9 @@ class Application(Flask):
         if 'ops_config' in os.environ:
             self.config.from_pyfile(
                 'config/{}_setting.py'.format(os.environ['ops_config']))
+        else:
+            self.config.from_pyfile(
+                'config/local_setting.py')
         db.init_app(self)
 
 

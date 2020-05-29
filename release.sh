@@ -1,0 +1,1 @@
+export ops_config=local

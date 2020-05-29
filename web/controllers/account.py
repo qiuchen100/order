@@ -11,7 +11,7 @@ route_account = Blueprint('account_page', __name__)
 
 @route_account.route('/index')
 def index():
-    page = request.args.get('p', 1)
+    page = int(request.args.get('p', 1))
     query = User.query
     page_size = app.config['PAGE_SIZE']
     display = app.config['PAGE_DISPLAY']
@@ -43,7 +43,7 @@ def info():
 @route_account.route('/set', methods=['GET', 'POST'])
 def set():
     default_pwd = '******'
-    resp = {'code': 200, 'msg': '添加新账户成功！', 'data': {}}
+    resp = {'code': 200, 'msg': '修改账户成功！', 'data': {}}
     if request.method == 'GET':
         uid = request.args.get('uid')
         user_info = User.query.filter_by(uid=uid).first() if uid else None
@@ -82,7 +82,7 @@ def set():
         resp['msg'] = "请输入符合规范的登录密码~~"
         return jsonify( resp )
 
-    user_info = User.query.filter(User.uid!=uid, User.login_name==login_name).first() if uid else None
+    user_info = User.query.filter(User.uid!=uid, User.login_name==login_name).first()
     if user_info:
         resp['code'] = -1
         resp['msg'] = "该登录名已存在，请换一个试试~~"
@@ -97,6 +97,7 @@ def set():
     model_user.updated_time = getCurrentDate()
     if not uid:
         model_user.created_time = getCurrentDate()
+        resp['msg'] = '添加新账户成功！'
     if login_pwd != '******':
         model_user.login_salt = UserService.geneSalt()
         model_user.login_pwd = UserService.genePwd(login_pwd, model_user.login_salt)
