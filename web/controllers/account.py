@@ -15,17 +15,22 @@ def index():
     query = User.query
     page_size = app.config['PAGE_SIZE']
     display = app.config['PAGE_DISPLAY']
+    url_params = "&"
+    for arg in request.args:
+        url_params += arg + "=" + request.args.get(arg)
+
     params = {
         'page': page,
         'total': query.count(),
         'page_size': page_size,
         'display': display,
-        'url': '/account/index'
+        'url': request.base_url,
+        'url_params': url_params.replace("&p={}".format('p'), "")
     }
     pages = iPagination(params)
     offset = (page - 1) * page_size
     limit = page * page_size
-    user_list = User.query.order_by(User.uid.desc()).all()[offset:limit]
+    user_list = query.order_by(User.uid.desc()).all()[offset:limit]
     return render_template('account/index.html', user_list=user_list, pages=pages)
 
 
@@ -40,15 +45,15 @@ def info():
     return render_template('account/info.html', user_info=user_info)
 
 
-@route_account.route('/set', methods=['GET', 'POST'])
-def set():
+@route_account.route('/edit', methods=['GET', 'POST'])
+def edit():
     default_pwd = '******'
     resp = {'code': 200, 'msg': '修改账户成功！', 'data': {}}
     if request.method == 'GET':
         uid = request.args.get('uid')
         user_info = User.query.filter_by(uid=uid).first() if uid else None
         default_pwd = default_pwd if uid else ''
-        return render_template('account/set.html', user_info=user_info, default_pwd=default_pwd)
+        return render_template('account/edit.html', user_info=user_info, default_pwd=default_pwd)
     req = request.values
     uid = req.get('uid', 0)
     nickname = req.get('nickname')
@@ -109,4 +114,4 @@ def set():
 
 @route_account.route('/ops', methods=['POST'])
 def ops():
-    return render_template('account/set.html')
+    return render_template('account/edit.html')
