@@ -28,8 +28,7 @@ def iPagination( params ):
         "page_size" : 0,
         "total" : 0,
         # "url":params['url'].replace("&p=",""),
-        "url": params['url'],
-        'params': params['url_params']
+        "url": params['url']
     }
 
     total = int( params['total'] )

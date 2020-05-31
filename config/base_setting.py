@@ -16,3 +16,10 @@ IGNORE_STATIC_URLS = [
 
 PAGE_SIZE = 3
 PAGE_DISPLAY = 5
+
+
+STATUS_MAPPING = {
+    "-1":"请选择状态",
+    "1":"正常",
+    "0":"已删除"
+}

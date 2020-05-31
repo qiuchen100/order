@@ -47,7 +47,7 @@ var account_set_ops = {
 
             btn_target.addClass('disabled');
             $.ajax({
-                url: common_ops.buildUrl('/account/set'),
+                url: common_ops.buildUrl('/account/edit'),
                 type: 'POST',
                 data: {'mobile': mobile, 'nickname': nickname, 'email': email, 'login_name': login_name, 'login_pwd': login_pwd, 'uid': uid},
                 dataType: 'json',
