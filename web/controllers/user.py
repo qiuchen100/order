@@ -4,6 +4,7 @@ from common.models.user import User
 from common.libs.UserService import UserService
 from application import app, db
 from common.libs.UrlManager import UrlManager
+from common.libs.Helper import getCurrentDate
 
 
 route_user = Blueprint('user_page', __name__)
@@ -35,6 +36,11 @@ def login():
     if user_info.login_pwd != UserService.genePwd(login_pwd, user_info.login_salt):
         resp['code'] = -1
         resp['msg'] = '请输入正确的用户名和密码！'
+        return jsonify(resp)
+
+    if user_info.status != 1:
+        resp['code'] = -1
+        resp['msg'] = '该账户已被锁定，请联系管理员解锁！'
         return jsonify(resp)
 
     response = make_response(jsonify(resp))
@@ -69,6 +75,7 @@ def edit():
     user_info.mobile = mobile
     user_info.nickname = nickname
     user_info.email = email
+    user_info.updated_time = getCurrentDate()
     db.session.add(user_info)
     db.session.commit()
 
@@ -105,6 +112,7 @@ def reset_pwd():
 
     user_info = g.current_user
     user_info.login_pwd = UserService.genePwd(new_password, user_info.login_salt)
+    user_info.updated_time = getCurrentDate()
     db.session.add(user_info)
     db.session.commit()
 

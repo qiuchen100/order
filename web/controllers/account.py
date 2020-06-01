@@ -138,6 +138,7 @@ def ops():
             resp['msg'] = '恢复账户成功！'
         else:
             user_info.status = 0
+            user_info.updated_time = getCurrentDate()
         db.session.add(user_info)
         db.session.commit()
         return jsonify(resp)
