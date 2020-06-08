@@ -5,7 +5,8 @@ AUTH_COOKIE_NAME = 'food_order'
 
 ##过滤url
 IGNORE_URLS = [
-    '^/user/login'
+    '^/user/login',
+    '^/api'
 ]
 
 IGNORE_STATIC_URLS = [
@@ -23,3 +24,12 @@ STATUS_MAPPING = {
     "1":"正常",
     "0":"已删除"
 }
+
+MINA_APP = {
+    'appid': 'wxc799b33abd0e4f8d',
+    'appkey': '816b4ef34ab27a70404dae4829047d7f'
+
+}
+
+MINA_URL = 'https://api.weixin.qq.com/sns/jscode2session?appid={}&secret={}&js_code=' \
+           '{}&grant_type=authorization_code'

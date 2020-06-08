@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27897a83-0709-4e39-95cc-18b0e2e2de95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/order.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/models/OauthMemberBind.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/models/member.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/controllers/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/controllers/api/member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/base_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/base_setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.py" beforeDir="false" afterPath="$PROJECT_DIR$/www.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/qiuchen100/order.git" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1byvD54T0EDxjRrJsFkSnKs7ZNc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/controllers" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/controllers" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27897a83-0709-4e39-95cc-18b0e2e2de95" name="Default Changelist" comment="" />
+      <created>1589617024719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589617024719</updated>
+      <workItem from="1589617028182" duration="573000" />
+      <workItem from="1589618210091" duration="1282000" />
+      <workItem from="1589619507577" duration="5936000" />
+      <workItem from="1589679326187" duration="10657000" />
+      <workItem from="1589806306132" duration="3285000" />
+      <workItem from="1589894103473" duration="4036000" />
+      <workItem from="1589940684089" duration="336000" />
+      <workItem from="1590069385432" duration="154000" />
+      <workItem from="1590160969870" duration="197000" />
+      <workItem from="1590244571590" duration="241000" />
+      <workItem from="1590328407816" duration="2788000" />
+      <workItem from="1590506119610" duration="291000" />
+      <workItem from="1590677852081" duration="2565000" />
+      <workItem from="1590762803353" duration="1751000" />
+      <workItem from="1590809738855" duration="3080000" />
+      <workItem from="1590890957281" duration="9595000" />
+      <workItem from="1591019276411" duration="1063000" />
+      <workItem from="1591370394842" duration="668000" />
+      <workItem from="1591520305937" duration="814000" />
+      <workItem from="1591542846666" duration="1283000" />
+      <workItem from="1591584672014" duration="2967000" />
+      <workItem from="1591605867642" duration="4129000" />
+    </task>
+    <task id="LOCAL-00001" summary="更换项目python版本及虚拟环境管理器">
+      <created>1589617294006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589617294006</updated>
+    </task>
+    <task id="LOCAL-00002" summary="调整整体框架部分逻辑，并加入controllers层代码">
+      <created>1589679857558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589679857558</updated>
+    </task>
+    <task id="LOCAL-00003" summary="models层user模块">
+      <created>1589679908306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589679908306</updated>
+    </task>
+    <task id="LOCAL-00004" summary="用户登录功能">
+      <created>1589817930144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589817930144</updated>
+    </task>
+    <task id="LOCAL-00005" summary="用户登录功能">
+      <created>1589940917550</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589940917550</updated>
+    </task>
+    <task id="LOCAL-00006" summary="bug fix">
+      <created>1590682471042</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590682471042</updated>
+    </task>
+    <task id="LOCAL-00007" summary="账户列表搜索功能&#10;账户删除和恢复功能">
+      <created>1590937237297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590937237297</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更换项目python版本及虚拟环境管理器" />
+    <MESSAGE value="调整整体框架部分逻辑，并加入controllers层代码" />
+    <MESSAGE value="models层user模块" />
+    <MESSAGE value="用户登录功能" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="账户列表搜索功能&#10;账户删除和恢复功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="账户列表搜索功能&#10;账户删除和恢复功能" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Inspections" timestamp="1590329360338">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1590329360338" />
+    <state x="320" y="115" key="#Notifications" timestamp="1590937254114">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1590937254114" />
+    <state x="184" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590682455215">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1590682455215" />
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1589648788583">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1589648788583" />
+    <state x="303" y="50" key="CommitChangelistDialog2" timestamp="1590937237142">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1590937237142" />
+    <state x="144" y="79" width="1152" height="720" key="DiffContextDialog" timestamp="1590937195595">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="79" width="1152" height="720" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1590937195595" />
+    <state x="519" y="168" key="RollbackChangesDialog" timestamp="1590506201186">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="519" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1590506201186" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1589814024362">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1589814024362" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1590937239176">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590937239176" />
+    <state x="207" y="0" width="982" height="625" key="dock-window-1" timestamp="1590767375038">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="207" y="0" width="982" height="625" key="dock-window-1/0.23.1440.798@0.23.1440.798" timestamp="1590767375038" />
+    <state x="420" y="248" key="git4idea.merge.GitPullDialog" timestamp="1591370614746">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="420" y="248" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1591370614746" />
+  </component>
+</project>
