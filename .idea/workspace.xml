@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27897a83-0709-4e39-95cc-18b0e2e2de95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/order.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/OauthMemberBind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models/member.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/controllers/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/controllers/api/member.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/base_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/base_setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www.py" beforeDir="false" afterPath="$PROJECT_DIR$/www.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/libs/MemberService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/libs/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/UserService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/api/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/member.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +105,9 @@
       <workItem from="1591520305937" duration="814000" />
       <workItem from="1591542846666" duration="1283000" />
       <workItem from="1591584672014" duration="2967000" />
-      <workItem from="1591605867642" duration="4129000" />
+      <workItem from="1591605867642" duration="4262000" />
+      <workItem from="1592025359093" duration="1169000" />
+      <workItem from="1592105638953" duration="4042000" />
     </task>
     <task id="LOCAL-00001" summary="更换项目python版本及虚拟环境管理器">
       <created>1589617294006</created>
@@ -166,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590937237297</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="会员注册登录功能">
+      <created>1591632667256</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591632667256</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +191,8 @@
     <MESSAGE value="用户登录功能" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="账户列表搜索功能&#10;账户删除和恢复功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="账户列表搜索功能&#10;账户删除和恢复功能" />
+    <MESSAGE value="会员注册登录功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="会员注册登录功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Inspections" timestamp="1590329360338">
@@ -211,10 +211,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1589648788583" />
-    <state x="303" y="50" key="CommitChangelistDialog2" timestamp="1590937237142">
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592025392724">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1590937237142" />
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1592025392724" />
+    <state x="303" y="50" key="CommitChangelistDialog2" timestamp="1591632667079">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591632667079" />
     <state x="144" y="79" width="1152" height="720" key="DiffContextDialog" timestamp="1590937195595">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -227,10 +231,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1589814024362" />
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1590937239176">
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1591632668729">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590937239176" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591632668729" />
     <state x="207" y="0" width="982" height="625" key="dock-window-1" timestamp="1590767375038">
       <screen x="0" y="23" width="1440" height="798" />
     </state>

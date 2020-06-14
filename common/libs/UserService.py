@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import base64, hashlib, random, string
 
+
 class UserService:
 
     @staticmethod
@@ -10,7 +11,6 @@ class UserService:
         m.update(str.encode('utf-8'))
         return m.hexdigest()
 
-
     @staticmethod
     def geneAuthCode(user_info):
         m = hashlib.md5()
@@ -18,8 +18,7 @@ class UserService:
         m.update(str.encode('utf-8'))
         return m.hexdigest()
 
-
     @staticmethod
     def geneSalt( length = 16 ):
         keylist = [ random.choice( ( string.ascii_letters + string.digits ) ) for i in range( length ) ]
-        return ( "".join( keylist ) )
+        return ("".join(keylist))
