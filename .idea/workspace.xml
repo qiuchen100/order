@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27897a83-0709-4e39-95cc-18b0e2e2de95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/libs/MemberService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/js/member/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/js/member/set.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/libs/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/libs/UserService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/api/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/api/member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/models/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/base_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/base_setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/controllers/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/member/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/member/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/member/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/member/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/member/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/member/set.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +59,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/js/member" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/static/js/member" />
       <recent name="$PROJECT_DIR$/web/controllers" />
     </key>
   </component>
@@ -107,7 +113,8 @@
       <workItem from="1591584672014" duration="2967000" />
       <workItem from="1591605867642" duration="4262000" />
       <workItem from="1592025359093" duration="1169000" />
-      <workItem from="1592105638953" duration="4042000" />
+      <workItem from="1592105638953" duration="9284000" />
+      <workItem from="1592743689976" duration="3268000" />
     </task>
     <task id="LOCAL-00001" summary="更换项目python版本及虚拟环境管理器">
       <created>1589617294006</created>
@@ -165,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591632667256</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="会员注册登录并保存token信息功能完成">
+      <created>1592136058589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592136058589</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +206,8 @@
     <MESSAGE value="bug fix" />
     <MESSAGE value="账户列表搜索功能&#10;账户删除和恢复功能" />
     <MESSAGE value="会员注册登录功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="会员注册登录功能" />
+    <MESSAGE value="会员注册登录并保存token信息功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="会员注册登录并保存token信息功能完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Inspections" timestamp="1590329360338">
@@ -215,10 +230,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1592025392724" />
-    <state x="303" y="50" key="CommitChangelistDialog2" timestamp="1591632667079">
+    <state x="303" y="50" key="CommitChangelistDialog2" timestamp="1592136058423">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591632667079" />
+    <state x="303" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1592136058423" />
     <state x="144" y="79" width="1152" height="720" key="DiffContextDialog" timestamp="1590937195595">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -231,10 +246,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1589814024362" />
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1591632668729">
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1592136061842">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591632668729" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592136061842" />
     <state x="207" y="0" width="982" height="625" key="dock-window-1" timestamp="1590767375038">
       <screen x="0" y="23" width="1440" height="798" />
     </state>

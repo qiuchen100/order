@@ -25,6 +25,12 @@ STATUS_MAPPING = {
     "0":"已删除"
 }
 
+SEX_MAPPING = {
+    "0":"未知",
+    "1":"男",
+    "2":"女"
+}
+
 MINA_APP = {
     'appid': 'wxc799b33abd0e4f8d',
     'appkey': '816b4ef34ab27a70404dae4829047d7f'
