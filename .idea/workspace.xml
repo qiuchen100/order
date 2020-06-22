@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27897a83-0709-4e39-95cc-18b0e2e2de95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/static/js/member/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/js/member/set.js" afterDir="false" />
+    <list default="true" id="52d38d85-0ad4-4b40-bc4b-2d87c8ad70fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/order.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models/member.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/base_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/base_setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/local_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/local_setting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/controllers/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/controllers/member.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/member/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/member/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/member/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/member/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/member/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/member/set.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="order" is-module-sdk="true">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="order" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
       </list>
@@ -44,10 +46,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectId" id="1byvD54T0EDxjRrJsFkSnKs7ZNc" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1c4JpIZA0h05VwSBO6OCZ8MIVEN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -59,127 +58,192 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/js/member" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="order" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="order" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/static/js/member" />
-      <recent name="$PROJECT_DIR$/web/controllers" />
+      <recent name="E:\work\order\web\static\js\account" />
+      <recent name="E:\work\order\web\static\js\user" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunManager" selected="Python.test_main">
+    <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="order" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="order" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manager.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="order" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/release.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.application" />
+      <item itemvalue="Python.manager" />
+      <item itemvalue="Python.test_main" />
+    </list>
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Python.test_main" />
+        <item itemvalue="Python.manager" />
+        <item itemvalue="Python.application" />
       </list>
-    </option>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="DEFAULT_SDK" />
+    <option name="myConnectionId" value="" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="27897a83-0709-4e39-95cc-18b0e2e2de95" name="Default Changelist" comment="" />
-      <created>1589617024719</created>
+      <changelist id="52d38d85-0ad4-4b40-bc4b-2d87c8ad70fa" name="Default Changelist" comment="" />
+      <created>1589782113942</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589617024719</updated>
-      <workItem from="1589617028182" duration="573000" />
-      <workItem from="1589618210091" duration="1282000" />
-      <workItem from="1589619507577" duration="5936000" />
-      <workItem from="1589679326187" duration="10657000" />
-      <workItem from="1589806306132" duration="3285000" />
-      <workItem from="1589894103473" duration="4036000" />
-      <workItem from="1589940684089" duration="336000" />
-      <workItem from="1590069385432" duration="154000" />
-      <workItem from="1590160969870" duration="197000" />
-      <workItem from="1590244571590" duration="241000" />
-      <workItem from="1590328407816" duration="2788000" />
-      <workItem from="1590506119610" duration="291000" />
-      <workItem from="1590677852081" duration="2565000" />
-      <workItem from="1590762803353" duration="1751000" />
-      <workItem from="1590809738855" duration="3080000" />
-      <workItem from="1590890957281" duration="9595000" />
-      <workItem from="1591019276411" duration="1063000" />
-      <workItem from="1591370394842" duration="668000" />
-      <workItem from="1591520305937" duration="814000" />
-      <workItem from="1591542846666" duration="1283000" />
-      <workItem from="1591584672014" duration="2967000" />
-      <workItem from="1591605867642" duration="4262000" />
-      <workItem from="1592025359093" duration="1169000" />
-      <workItem from="1592105638953" duration="9284000" />
-      <workItem from="1592743689976" duration="3268000" />
+      <updated>1589782113942</updated>
+      <workItem from="1589782118540" duration="296000" />
+      <workItem from="1589782425184" duration="3570000" />
+      <workItem from="1589793163096" duration="51000" />
+      <workItem from="1589793222481" duration="2566000" />
+      <workItem from="1589854899344" duration="4910000" />
+      <workItem from="1589860496581" duration="1842000" />
+      <workItem from="1589868469151" duration="5473000" />
+      <workItem from="1589938474717" duration="19282000" />
+      <workItem from="1590370408179" duration="2321000" />
+      <workItem from="1590463550624" duration="9852000" />
+      <workItem from="1590638738056" duration="25560000" />
+      <workItem from="1590976991128" duration="16913000" />
+      <workItem from="1591062075644" duration="3069000" />
+      <workItem from="1592533680685" duration="595000" />
+      <workItem from="1592554304106" duration="5801000" />
     </task>
-    <task id="LOCAL-00001" summary="更换项目python版本及虚拟环境管理器">
-      <created>1589617294006</created>
+    <task id="LOCAL-00001" summary="用户信息编辑，密码修改功能！">
+      <created>1589880854495</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1589617294006</updated>
+      <updated>1589880854495</updated>
     </task>
-    <task id="LOCAL-00002" summary="调整整体框架部分逻辑，并加入controllers层代码">
-      <created>1589679857558</created>
+    <task id="LOCAL-00002" summary="账户列表和账户详情展示">
+      <created>1590482005156</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1589679857558</updated>
+      <updated>1590482005156</updated>
     </task>
-    <task id="LOCAL-00003" summary="models层user模块">
-      <created>1589679908306</created>
+    <task id="LOCAL-00003" summary="账户添加和编辑">
+      <created>1590659275325</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1589679908306</updated>
+      <updated>1590659275325</updated>
     </task>
-    <task id="LOCAL-00004" summary="用户登录功能">
-      <created>1589817930144</created>
+    <task id="LOCAL-00004" summary="bugfix: 账户添加和编辑&#10;分页功能完善">
+      <created>1590741521901</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1589817930144</updated>
+      <updated>1590741521901</updated>
     </task>
-    <task id="LOCAL-00005" summary="用户登录功能">
-      <created>1589940917550</created>
+    <task id="LOCAL-00005" summary="优化账户列表页面按查询参数访问逻辑">
+      <created>1590744860927</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1589940917550</updated>
+      <updated>1590744860927</updated>
     </task>
-    <task id="LOCAL-00006" summary="bug fix">
-      <created>1590682471042</created>
+    <task id="LOCAL-00006" summary="优化删除和恢复账户提醒&#10;登录日志功能">
+      <created>1591004951015</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1590682471042</updated>
+      <updated>1591004951015</updated>
     </task>
-    <task id="LOCAL-00007" summary="账户列表搜索功能&#10;账户删除和恢复功能">
-      <created>1590937237297</created>
+    <task id="LOCAL-00007" summary="优化删除和恢复账户提醒&#10;登录日志功能">
+      <created>1591061786627</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1590937237297</updated>
+      <updated>1591061786627</updated>
     </task>
-    <task id="LOCAL-00008" summary="会员注册登录功能">
-      <created>1591632667256</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1591632667256</updated>
-    </task>
-    <task id="LOCAL-00009" summary="会员注册登录并保存token信息功能完成">
-      <created>1592136058589</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1592136058589</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,64 +263,126 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更换项目python版本及虚拟环境管理器" />
-    <MESSAGE value="调整整体框架部分逻辑，并加入controllers层代码" />
-    <MESSAGE value="models层user模块" />
-    <MESSAGE value="用户登录功能" />
-    <MESSAGE value="bug fix" />
-    <MESSAGE value="账户列表搜索功能&#10;账户删除和恢复功能" />
-    <MESSAGE value="会员注册登录功能" />
-    <MESSAGE value="会员注册登录并保存token信息功能完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="会员注册登录并保存token信息功能完成" />
+    <MESSAGE value="用户信息编辑，密码修改功能！" />
+    <MESSAGE value="账户列表和账户详情展示" />
+    <MESSAGE value="账户添加和编辑" />
+    <MESSAGE value="bugfix: 账户添加和编辑&#10;分页功能完善" />
+    <MESSAGE value="优化账户列表页面按查询参数访问逻辑" />
+    <MESSAGE value="优化删除和恢复账户提醒&#10;登录日志功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化删除和恢复账户提醒&#10;登录日志功能" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Inspections" timestamp="1590329360338">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590724611529">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1590329360338" />
-    <state x="320" y="115" key="#Notifications" timestamp="1590937254114">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590724611529" />
+    <state x="723" y="349" key="#com.intellij.tools.ToolEditorDialog" timestamp="1590724225328">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1590937254114" />
-    <state x="184" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590682455215">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="723" y="349" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590724225328" />
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1591061784986">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1590682455215" />
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1589648788583">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589940924999" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591061784986" />
+    <state x="184" y="86" width="1536" height="851" key="DiffContextDialog" timestamp="1592802108182">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1589648788583" />
-    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592025392724">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="184" y="86" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589941122055" />
+    <state x="184" y="86" width="1536" height="851" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592802108182" />
+    <state x="694" y="281" key="EnvironmentVariablesDialog" timestamp="1589855344450">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1592025392724" />
-    <state x="303" y="50" key="CommitChangelistDialog2" timestamp="1592136058423">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="694" y="281" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589855344450" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1591063665844">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="303" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1592136058423" />
-    <state x="144" y="79" width="1152" height="720" key="DiffContextDialog" timestamp="1590937195595">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589855302834" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591063665844" />
+    <state width="1877" height="345" key="GridCell.Tab.0.bottom" timestamp="1591078889255">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="144" y="79" width="1152" height="720" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1590937195595" />
-    <state x="519" y="168" key="RollbackChangesDialog" timestamp="1590506201186">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589868026465" />
+    <state width="1877" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591078889255" />
+    <state width="1877" height="345" key="GridCell.Tab.0.center" timestamp="1591078889255">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="519" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1590506201186" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1589814024362">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589868026465" />
+    <state width="1877" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591078889255" />
+    <state width="1877" height="345" key="GridCell.Tab.0.left" timestamp="1591078889255">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1589814024362" />
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1592136061842">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589868026465" />
+    <state width="1877" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591078889255" />
+    <state width="1877" height="345" key="GridCell.Tab.0.right" timestamp="1591078889255">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592136061842" />
-    <state x="207" y="0" width="982" height="625" key="dock-window-1" timestamp="1590767375038">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589868026465" />
+    <state width="1877" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591078889255" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1590744888427">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="207" y="0" width="982" height="625" key="dock-window-1/0.23.1440.798@0.23.1440.798" timestamp="1590767375038" />
-    <state x="420" y="248" key="git4idea.merge.GitPullDialog" timestamp="1591370614746">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590744888427" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1590744888427">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="420" y="248" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1591370614746" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590744888427" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1590744888427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590744888427" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1590744888427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590744888427" />
+    <state x="830" y="230" key="RollbackChangesDialog" timestamp="1592802081791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="230" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589855766608" />
+    <state x="830" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592802081791" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1591063263903">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589855345794" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591063263903" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1591061788150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589880856132" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591061788150" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589782119640">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589782119640" />
+    <state x="853" y="255" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1590724226112">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="853" y="255" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.1920.1040@0.0.1920.1040" timestamp="1590724226112" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1590465795706">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1590465795706" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1590465795706">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1590465795706" />
+    <state x="636" y="119" width="647" height="801" key="find.popup" timestamp="1592803277031">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="119" width="647" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592803277031" />
+    <state x="671" y="311" key="git4idea.merge.GitPullDialog" timestamp="1592802203725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="671" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589940965518" />
+    <state x="671" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592802203725" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592803256792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592803256792" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/order$manager.coverage" NAME="manager Coverage Results" MODIFIED="1590725154355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/order$application.coverage" NAME="application Coverage Results" MODIFIED="1590723966551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/order$test_main.coverage" NAME="test_main Coverage Results" MODIFIED="1591065059747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

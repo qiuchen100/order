@@ -115,6 +115,6 @@ def ops():
     return jsonify(resp)
 
 
-@route_member.route('/comment', methods=['POST'])
+@route_member.route('/comment', methods=['GET'])
 def comment():
     return render_template('member/comment.html')
