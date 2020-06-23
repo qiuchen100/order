@@ -1,11 +1,5 @@
-# coding: utf-8
-from sqlalchemy import Column, DateTime, Integer, String
-from sqlalchemy.schema import FetchedValue
-from flask_sqlalchemy import SQLAlchemy
-
-
-db = SQLAlchemy()
-
+# -*- coding: utf-8 -*-
+from application import db
 
 
 class FoodCat(db.Model):
