@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, render_template, redirect, request, jsonify
 from sqlalchemy import or_
-from common.models.user import User
+from common.models.User import User
 from common.libs.Helper import iPagination, getCurrentDate
 from common.libs.UrlManager import UrlManager
 from common.libs.UserService import UserService

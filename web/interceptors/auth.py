@@ -2,7 +2,7 @@
 import re
 from flask import request, redirect, g
 from application import app
-from common.models.user import User
+from common.models.User import User
 from common.libs.UserService import UserService
 from common.libs.UrlManager import UrlManager
 

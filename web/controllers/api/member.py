@@ -3,7 +3,7 @@ import requests, json
 from . import route_api
 from flask import jsonify, request
 from application import app, db
-from common.models.member import Member
+from common.models.Member import Member
 from common.models.OauthMemberBind import OauthMemberBind
 from common.libs.Helper import getCurrentDate
 from common.libs.MemberService import MemberService

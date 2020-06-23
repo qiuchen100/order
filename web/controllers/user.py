@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, request, jsonify, make_response, redirect, render_template, g
-from common.models.user import User
+from common.models.User import User
 from common.libs.UserService import UserService
 from application import app, db
 from common.libs.UrlManager import UrlManager
