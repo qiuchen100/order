@@ -20,9 +20,10 @@
                 <div class="row  m-t p-w-m">
                     <div class="form-group">
                         <select name="status" class="form-control inline">
-                            <option value="-1">请选择状态</option>
-                            <option value="1">正常</option>
-                            <option value="0">已删除</option>
+                        {% for status in status_mapping %}
+                                <option value="{{ status }}" {% if status == params['status'] %}
+                                        selected {% endif %}>{{ status_mapping[status] }}</option>
+                        {% endfor %}
                         </select>
                     </div>
                 </div>

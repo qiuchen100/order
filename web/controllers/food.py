@@ -9,7 +9,8 @@ route_food = Blueprint('food_page', __name__)
 
 @route_food.route('/index')
 def index():
-    return render_template('food/index.html')
+    status_mapping = app.config['STATUS_MAPPING']
+    return render_template('food/index.html', status_mapping=status_mapping, params=request.values)
 
 
 @route_food.route('/set')
@@ -25,9 +26,13 @@ def info():
 @route_food.route('/cat')
 def cat():
     query = FoodCat.query
+    status = request.values.get('status')
+    if status and int(status) > -1:
+        query = query.filter(FoodCat.status == status)
     food_cat_list = query.order_by(FoodCat.id.desc()).all()
     status_mapping = app.config['STATUS_MAPPING']
-    return render_template('food/cat.html', food_cat_list=enumerate(food_cat_list), status_mapping=status_mapping)
+    return render_template('food/cat.html', food_cat_list=enumerate(food_cat_list),
+                           status_mapping=status_mapping, params=request.values)
 
 
 @route_food.route('/cat-set', methods=['GET', 'POST'])

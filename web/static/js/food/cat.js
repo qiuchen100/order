@@ -1,10 +1,10 @@
 ;
-var member_index_ops = {
+var food_cat_ops = {
     init: function () {
         this.eventBind();
     },
     eventBind: function () {
-        $('.wrap_search .search').click(
+        $('.wrap_search select[name="status"]').change(
             function () {
                 $('.wrap_search').submit();
             }
@@ -52,5 +52,5 @@ var member_index_ops = {
     }
 };
 $(document).ready(function () {
-    member_index_ops.init();
+    food_cat_ops.init();
 });
